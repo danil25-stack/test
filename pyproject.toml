@@ -4,12 +4,14 @@ version = "0.1.0"
 description = ""
 authors = ["Danil Maslov <danil25@example.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.13"
 uvicorn = { version = ">=0.36.0,<0.37.0", extras = ["standard"] }
 fastapi = ">=0.117.1,<0.118.0"
 pydantic = ">=2.11.9,<3.0.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.43"}
 
 [tool.poetry.group.dev.dependencies]
 black = ">=25.9.0,<26.0.0"
